@@ -9,7 +9,7 @@ html{
   direction: rtl;
 }
 section {
-  background: url(assets/bg\ \(1\).jpg);
+  background: url(/bgg.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
