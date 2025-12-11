@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Story+Script&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif
+}
+html{
+  direction: rtl;
+}
+section {
+  background: url(assets/bg\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+section .container {
+  width: 850px;
+  background: #332a224e;
+  padding: 30px 25px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid #d7d7d74e;
+  margin-right: 10%;
+}
+section .top-sec{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d7d7d74e;
+}
+section .top-sec select{
+  width: 250px;
+  border-radius: 5px;
+  outline: none;
+  background: #a54f3a;
+  padding: 2px 10px;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 10px;
+}
+section .top-sec h3{
+  color: #fff;
+  font-size: 26px;
+}
+section .top-sec .date{
+  width: 250px;
+}
+section .top-sec .date h4{
+  color: #fff;
+  font-size: 26px;
+}
+section .prayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  background: #c0583e75;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid #d7d7d74e;
+}
+
+/* ======== Media Queries for Responsiveness ======== */
+
+/* For Tablets and smaller screens */
+@media (max-width: 992px) {
+  section {
+    background-size: cover;
+    min-height: auto;
+    padding: 20px 0;
+  }
+
+  section .top-sec {
+    gap: 20px; /* المسافة بين السيلكت والتانية */
+  }
+ 
+  section .container {
+    width: 90%;
+    margin: 0 auto; /* Center the container */
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  section {
+    padding: 15px 0;
+    background-size: cover;
+    height: auto;
+  }
+  section .container {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  section .top-sec {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Add space between items */
+  }
+
+  section .top-sec .city,
+  section .top-sec .date {
+    width: 100%;
+    text-align: center;
+  }
+
+  section .top-sec select {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  section .top-sec h3 {
+    font-size: 22px;
+  }
+
+  section .top-sec .date h4 {
+    font-size: 22px;
+  }
+
+  section .prayer {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+}
