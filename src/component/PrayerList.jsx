@@ -1,6 +1,6 @@
 
 import React from "react";
-import Prayer from "./prayer";
+import Prayer from "./Prayer";
 
 function PrayerList({ prayers, convertTime }) {
   return (
